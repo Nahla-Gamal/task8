@@ -1,0 +1,152 @@
+
+  .replies {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-left: 1px solid hsl(223, 19%, 93%);
+    margin-left: 80px;
+    position: relative;
+  }
+  @media only screen and (max-width: 600px){
+    .replies  {
+        margin-left: 20px;
+    }
+}
+ 
+  .comment-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+@media only screen and (max-width: 600px){
+    .comment-container {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+}
+
+
+.comment-counter {
+    width: 42px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(223, 19%, 93%);
+    padding: 2px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    .comment-counter {
+        width: 85px;
+        height: 35px;
+        flex-direction: row;
+        padding: 0;
+    }
+}
+
+.plusButton{
+    border: none;
+}
+
+.minusButton{
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.counter-number {
+    color: hsl(238, 40%, 52%);
+    text-align: center;
+    font-weight: bold;
+}
+.comment-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-info {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-name {
+    color: black;
+    font-weight: bold;
+}
+
+.share-time {
+    color: hsl(211, 10%, 45%);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    grid-area: 20px;
+}
+@media only screen and (max-width: 600px){
+    .actions {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+.edit-icon {
+    width: 15px;
+    height: 12px;
+}
+
+.remove-icon {
+    width: 12px;
+    height: 14px;
+}
+
+.edit-text {
+    color: hsl(238, 40%, 52%);
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    display: flex;
+    gap: 5px;
+}
+
+.remove-text {
+    color: hsl(358, 79%, 66%);
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    display: flex;
+    gap: 5px;
+}
+
+.comment-body p {
+    color: hsl(211, 10%, 45%);
+    font-size: 15px;
+    margin: 0;
+    line-height: 22px;
+}
